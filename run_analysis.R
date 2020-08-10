@@ -23,4 +23,4 @@ colnames(all)[3:563]<-feature$V2
 
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 avg<-aggregate(.~subject + actnames,all,mean)
-write.table(avg, file = "tidydata.csv",row.name=FALSE)
+write.table(avg, file = "tidydata.txt",row.name=FALSE)
